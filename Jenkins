@@ -7,11 +7,11 @@ node {
     }
    stage('Build') {
       // Run the maven build
-     echo "Building..."
+     echo "Building from GIT..."
      bat 'start cmd.exe /c C:\\Program Files (x86)\\Jenkins\\workspace\\batchfile.bat'
    }
    stage('Results') {
-     echo "Result..."
+     echo "Result from GIT......"
      build job: 'gitpull'
    }
 }
